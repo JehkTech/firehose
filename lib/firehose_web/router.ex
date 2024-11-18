@@ -21,12 +21,12 @@ defmodule FirehoseWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-   scope "/api", FirehoseWeb do
+  scope "/api", FirehoseWeb do
    
-     pipe_through :api
+    pipe_through :api
 
-     get "/roll", RollController, :index
-   end
+    get "/roll", RollController, :index
+  end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
   if Application.compile_env(:firehose, :dev_routes) do
