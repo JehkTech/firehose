@@ -1,0 +1,65 @@
+=CRASH REPORT==== 20-Nov-2024::14:52:16.286152 ===
+  crasher:
+    initial call: prim_tty:reader/1
+    pid: <0.69.0>
+    registered_name: user_drv_reader
+    exception error: no case clause matching {error,{read,ebadf}}
+      in function  prim_tty:reader_loop/6 (prim_tty.erl, line 476)
+    ancestors: [user_drv,<0.65.0>,kernel_sup,<0.47.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.67.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 28
+    reductions: 150
+  neighbours:
+
+=CRASH REPORT==== 20-Nov-2024::14:52:16.286152 ===
+  crasher:
+    initial call: prim_tty:reader/1
+    pid: <0.69.0>
+    registered_name: user_drv_reader
+    exception error: no case clause matching {error,{read,ebadf}}
+      in function  prim_tty:reader_loop/6 (prim_tty.erl, line 476)
+    ancestors: [user_drv,<0.65.0>,kernel_sup,<0.47.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.67.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 376
+    stack_size: 28
+    reductions: 150
+  neighbours:
+
+warning: defining a Gettext backend by calling
+
+    use Gettext, otp_app: ...
+
+is deprecated. To define a backend, call:
+
+    use Gettext.Backend, otp_app: :my_app
+
+Then, instead of importing your backend, call this in your module:
+
+    use Gettext, backend: MyApp.Gettext
+
+  lib/firehose_web/gettext.ex:23
+
+[info] Running FirehoseWeb.Endpoint with Bandit 1.5.7 at 127.0.0.1:4000 (http)
+[info] Access FirehoseWeb.Endpoint at http://localhost:4000
+[watch] build finished, watching for changes...
+Erlang/OTP 26 [erts-14.2.5] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit:ns]
+
+Interactive Elixir (1.15.7) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> 
+Rebuilding...
+
+Done in 1585ms.
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
